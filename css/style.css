@@ -301,7 +301,7 @@ display: none;
        
     }
     .card__container{
-        height: 90vh;
+        height: 130vh;
         flex-direction: column;
         padding-top: 20px;
         gap: 100px;
@@ -358,7 +358,7 @@ display: none;
 
 .about__text p{
     text-align: left;
-    color: blueviolet;
+    color: rgb(0, 4, 255);
 }
 
 
