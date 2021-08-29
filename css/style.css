@@ -10,6 +10,9 @@
      font-weight: 500px;
      text-decoration: none;
  }
+ html{
+     scroll-behavior: smooth;
+ }
 .header__container{
     background-image: url(https://images.pexels.com/photos/2422290/pexels-photo-2422290.jpeg?auto=compress&cs=tinysrgb&h=650&w=940);
     background-position: center;
@@ -363,9 +366,8 @@ display: none;
 
 
 .about__img{
-    background-color: blueviolet;
     width:80%;
-    height: 50%;
+    height:50%;
     display: flex;
     flex-direction: column;
     align-items: center;
