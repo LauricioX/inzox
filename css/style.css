@@ -13,6 +13,7 @@
  html{
      scroll-behavior: smooth;
  }
+ 
 .header__container{
     background-image: url(https://images.pexels.com/photos/2422290/pexels-photo-2422290.jpeg?auto=compress&cs=tinysrgb&h=650&w=940);
     background-position: center;
@@ -27,7 +28,32 @@
     justify-content: center;
     gap: 20px;
     position: relative;
+    animation-name: back;
+    animation-duration: 10s;
+    transition: all .3s;
+    animation-timing-function: linear;
 }
+
+/* animation backgoround header */
+
+@keyframes back {
+    0%{
+        background-image: url(https://images.pexels.com/photos/2422290/pexels-photo-2422290.jpeg?auto=compress&cs=tinysrgb&h=650&w=940);
+    }
+
+    40%{
+        background-image: url(https://images.pexels.com/photos/2422293/pexels-photo-2422293.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+    }
+
+    80%{
+        background-image: url(https://images.pexels.com/photos/2422288/pexels-photo-2422288.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+    }
+
+    100%{
+        background-image: url(https://images.pexels.com/photos/2422290/pexels-photo-2422290.jpeg?auto=compress&cs=tinysrgb&h=650&w=940);
+    }
+}
+
 
 .nav__container{
     align-self: flex-start;
@@ -352,7 +378,9 @@ display: none;
     background-color: rgb(255, 255, 255);
     box-shadow: 1px 4px 10px black;
     padding:   20px;
-    align-self: flex-start;
+    align-self: center;
+    max-height: 500px;
+    max-width: 800px;
 }
 
 .about__text h2{
@@ -363,6 +391,7 @@ display: none;
 .about__text p{
     text-align: left;
     color: rgb(0, 4, 255);
+    text-shadow: none;
 }
 
 
