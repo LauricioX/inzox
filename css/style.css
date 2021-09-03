@@ -13,8 +13,8 @@
  html{
      scroll-behavior: smooth;
  }
- 
-.header__container{
+
+.head__container{
     background-image: url(https://images.pexels.com/photos/2422290/pexels-photo-2422290.jpeg?auto=compress&cs=tinysrgb&h=650&w=940);
     background-position: center;
     background-repeat: no-repeat;
@@ -90,7 +90,7 @@ width: 100%;
 background-color: rgba(145, 7, 7, 0);
 border-radius: 0 0 10px 10px;
 position: fixed;
-z-index: 2;
+z-index: 200;
 overflow: hidden;
 top: 80px;
 }
@@ -153,11 +153,15 @@ text-align: center;
 
 .logo{
     height: 100%;
-    width: 20%;
+    width: 30%;
     text-align: center;
     line-height:60px;
     font-size: 1.3rem;
     color: blue;
+}
+
+.logo h1{
+    font-size: 2.6rem;
 }
 .header__nav__container{
     display: flex;
@@ -167,11 +171,7 @@ text-align: center;
     gap: 20px;
 
 }
-.nav__text{
-    width: 100%;
-    text-align: center;
-    color: blue;
-}
+
 .header__nav__container ul{
 display: flex;
 gap: 5%;
@@ -181,7 +181,7 @@ justify-content: center;
 }
 .header__nav__container ul li a{
 text-decoration: none;
-font-size: 1.2rem;
+font-size: 1.9rem;
 transition: all .1s;
 }
 .header__nav__container ul li a:hover{
@@ -233,6 +233,7 @@ display: none;
 /* =======card__container===== */
 
 .card__container{
+    padding-top: 200px;
     width: 100VW;
     height: 50vh;
     display: flex;
@@ -328,11 +329,13 @@ display: none;
         width: 90%;
         height: 300px;
        
+       
     }
     .card__container{
         height: 130vh;
         flex-direction: column;
         padding-top: 20px;
+        padding-bottom: 900px;
         gap: 100px;
         justify-content: flex-start;
     }
@@ -413,18 +416,154 @@ display: none;
 .about__learn__more{
     width: 150px;
     height: 50px;
-    background-color: rgb(34, 4, 167);
+    background-color: rgb(47, 0, 255);
     position: absolute;
     bottom: 10px;
     color: white;
     text-align: center;
     line-height: 50px;
     text-transform: uppercase;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.about__learn__more:hover{
+    background-color: rgb(32, 0, 160);
+    color: whitesmoke;
 }
 
 
 /* =========about__media queiries====== */
 
-@media screen and (max-width:660px) {
+
+
+
+
+
+
+/* =========services===== */
+
+.section__services{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 200px;
+    margin-bottom: 200px;
+}
+
+.services__text h2{
+    font-size: 2.7rem;
+color: rgb(0, 4, 255);
+text-transform: uppercase;
+
+}
+
+
+
+.card__services{
+    display: flex;
+ flex-wrap: wrap;
+ width: 100%;
+ height: 100%;
+ align-items: center;
+ justify-content: center;
+ padding:20px;
+ gap: 20px;
     
 }
+
+.card{
+    width: 100%;
+    flex: 1 1 300px;
+    max-width: 400px;
+}
+
+.card .card-title{
+    color: blue;
+    font-size: 1.6rem;
+   
+}
+.card .card-text{
+    color: blue;
+    text-shadow: none;
+}
+
+
+
+
+
+
+/* ====media quiries==== */
+
+
+@media screen and (max-width:538px) {
+    .section__services{
+        height: 120vh;
+      padding-top: 400px;
+      padding-bottom: 400px;
+    }
+}
+
+
+
+/* =======section__container===== */
+
+.pages__container{
+    margin-top: 400px;
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+    padding-top: 180px;
+    gap: 100px;
+    
+
+}
+.pages__text h2{
+    text-transform: uppercase;
+    font-size: 2.7rem;
+    color: rgb(0, 4, 255);
+}
+
+
+.carousel__container{
+    width: 70%;
+} 
+
+.explore{
+    width: 50%;
+    height: 60px;
+    max-width: 300px;
+    line-height: 60px;
+    background-color: rgb(28, 31, 219);
+    color: rgb(238, 240, 255);
+    text-decoration: none;
+    font-size: 1.6rem;
+    align-self: flex-start;
+    margin-left: 140px;
+    text-transform: uppercase;
+    text-align: center;
+
+} 
+
+
+/* =====media quiries pages====== */
+
+@media screen and (max-width:664px){
+   .pages__container{
+    margin-top: 900px;
+   }
+}
+@media screen and (min-width:948px){
+    .section__services{
+        margin-bottom: 20pz;
+    }
+    .pages__container{
+     margin-top: 20px;
+    }
+ }
