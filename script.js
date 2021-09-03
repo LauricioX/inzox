@@ -5,7 +5,7 @@
 
 
 hamburguer.addEventListener("click", function(){
-document.querySelector(".ul__up").classList.toggle("show")
+document.querySelector(".menu__low").classList.toggle("show")
 });
 
 
