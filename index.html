@@ -243,16 +243,20 @@
 
        <section class="contact" id="contact">
         
-           <form action="#" class="form__contact">
+           <form action="https://api.staticforms.xyz/submit"  method="POST" class="form__contact">
                <fieldset>
+                    <input type="hidden" name="accessKey" value="7eacceaa-6306-449c-bd08-07b79a1f45f5">
                    <legend>contact-us</legend>
-                   <label for="name">nome</label>
-                   <input type="name" required id="name" placeholder="yourname">
+
+                   <label for="name">name</label>
+                   <input type="text" name="name" id="name" placeholder="yourname">
 
                    <label for="email">email</label>
-                   <input type="email" required id="email" placeholder="exemple@gmal.com">
-                   <textarea name="text" id="area" cols="30" rows="4" placeholder="messenge" ></textarea>
-                   <input type="submit" value="send">
+                   <input type="text" name="email" required id="email" placeholder="exemple@gmal.com">
+
+                   <textarea name="message" id="area" cols="30" rows="4" placeholder="messenge" ></textarea>
+                   <input type="hidden" name="redirectTo" value="http://127.0.0.1:5501/index.html">
+                   <input type="submit" value="submit">
                    
                </fieldset>
            </form>
